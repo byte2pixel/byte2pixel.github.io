@@ -1,0 +1,241 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Mel Dommer · Software Engineering Specialist</title>
+  <meta name="description" content="Portfolio of Mel Dommer, a Software Engineering Specialist with 20+ years building .NET backends, React front ends, and developer tooling.">
+  <meta property="og:title" content="Mel Dommer · Software Engineering Specialist">
+  <meta property="og:description" content="20+ years building .NET backends, React front ends, and developer tooling. Open-source author of Serilog.Sinks.File.Encrypt and gh-statline.">
+  <meta property="og:image" content="https://byte2pixel.github.io/assets/avatar.png">
+  <meta property="og:url" content="https://byte2pixel.github.io/">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip" href="#about">Skip to content</a>
+
+  <header class="site-header">
+    <nav class="nav" aria-label="Primary">
+      <a class="brand" href="#top">Mel Dommer</a>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <img class="avatar" src="assets/avatar.png" alt="Portrait of Mel Dommer" width="160" height="160">
+      <div class="hero-text">
+        <p class="eyebrow">Iowa, United States · Open to connecting</p>
+        <h1>Mel Dommer</h1>
+        <p class="title">Software Engineering Specialist</p>
+        <p class="lede">Twenty-plus years shipping software, from COBOL on the AS/400 to ASP.NET Core and React today. I build backend services, front-end UIs, and the developer tooling that holds a team together, and I mentor the people building alongside me.</p>
+        <div class="actions">
+          <a class="btn primary" href="https://github.com/byte2pixel">GitHub</a>
+          <a class="btn" href="https://www.linkedin.com/in/mel-dommer/">LinkedIn</a>
+          <a class="btn" href="mailto:byte2pixel@gmail.com">Email</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section">
+      <h2>About</h2>
+      <div class="prose">
+        <p>I am a senior developer at Emerson, where I mentor and pair with a team of more than 40 developers across the globe. My day-to-day is C# on the .NET backend and TypeScript, React, and Redux on the front end, building the next generation of valve configuration software for industrial customers.</p>
+        <p>My career started in publishing, writing COBOL transaction-processing programs and running database migrations for new clients. From there I moved into embedded AV control systems, then military mapping and mission-planning software, then a remote-desktop product that streams 3D applications from cloud workstations. Each move added a layer: low-level systems, client and server architecture, real-time video, and now large-scale product development.</p>
+        <p>Today my favorite place to work is the .NET ecosystem, especially ASP.NET Core and .NET Aspire for cloud applications. Outside of work I write open-source libraries and tools, publish Twitch extensions used by hundreds of streamers, and I am finishing a Bachelor of Science in Computer Science at Full Sail University while working full time.</p>
+      </div>
+    </section>
+
+    <section id="experience" class="section">
+      <h2>Experience</h2>
+      <ol class="timeline">
+        <li>
+          <div class="when">Apr 2022 – Present</div>
+          <div class="what">
+            <h3>Software Engineering Specialist · <span>Emerson</span></h3>
+            <p class="where">Iowa, United States · On-site</p>
+            <ul>
+              <li>Senior developer on ValveLink Pro, a new application replacing a legacy product that bridges the technician configuring a valve and actuator with the digital valve controller mounted on it.</li>
+              <li>Build backend services in C# and .NET and the front-end UI in TypeScript, React, and Redux.</li>
+              <li>Integrate REST and WebSocket APIs alongside the HART industrial protocol used by field devices.</li>
+              <li>Mentor and pair-program with developers across a 40+ person global team.</li>
+            </ul>
+          </div>
+        </li>
+        <li>
+          <div class="when">Aug 2011 – Apr 2022</div>
+          <div class="what">
+            <h3>Senior Software Engineer · <span>Mechdyne Corporation</span></h3>
+            <p class="where">Iowa, United States</p>
+            <ul>
+              <li>Team lead for TGX, a remote-desktop product that delivers 3D applications from cloud workstations at high resolution and frame rate using the NVIDIA NVENC and NVDEC APIs.</li>
+              <li>Developed GEC2O, client and server mapping and mission-planning software for federal customers, including satellite message relay, in C#, ASP.NET, and Microsoft SQL Server.</li>
+              <li>Maintained a Java integration with third-party weapon targeting software and an Android client for the same platform.</li>
+              <li>Built an iOS meeting-automation app with C#, Xamarin, and .NET.</li>
+              <li>Designed and programmed interaction and control systems for virtual reality, visualization, and conference rooms in C, C++, and proprietary AV scripting languages, and installed systems around the world.</li>
+            </ul>
+          </div>
+        </li>
+        <li>
+          <div class="when">May 2005 – Aug 2011</div>
+          <div class="what">
+            <h3>Systems Analyst · <span>CDS Global</span></h3>
+            <p class="where">Iowa, United States</p>
+            <ul>
+              <li>Developed and maintained IBM AS/400 COBOL programs processing high volumes of payments, returns, and cancellations for magazine and product fulfillment.</li>
+              <li>Owned database migrations for new clients, writing custom COBOL conversion programs to move their historical data into the DB2 schema without interrupting transaction processing.</li>
+              <li>Later moved to the web team, adding Java and JavaScript to the toolkit.</li>
+            </ul>
+          </div>
+        </li>
+      </ol>
+    </section>
+
+    <section id="projects" class="section">
+      <h2>Projects</h2>
+      <h3 class="subhead">Open source</h3>
+      <div class="grid">
+        <article class="card">
+          <header>
+            <h4><a href="https://github.com/byte2pixel/serilog-sinks-file-encrypt">Serilog.Sinks.File.Encrypt</a></h4>
+            <span class="tag">C# · .NET</span>
+          </header>
+          <p>A Serilog file-sink hook that encrypts log files with hybrid RSA and AES-GCM cryptography. Version 6 adds a tamper-evident format that detects truncation, reordering, and splicing, plus key rotation and streaming decryption for large files.</p>
+          <p class="meta">Four NuGet packages released in lockstep · CI, CodeQL, and Codecov · Azure Key Vault and AWS KMS key providers</p>
+          <p class="links"><a href="https://github.com/byte2pixel/serilog-sinks-file-encrypt">Repository</a> · <a href="https://www.nuget.org/packages/Serilog.Sinks.File.Encrypt">NuGet</a></p>
+        </article>
+        <article class="card">
+          <header>
+            <h4><a href="https://github.com/byte2pixel/gh-statline">gh-statline</a></h4>
+            <span class="tag">Go · TUI</span>
+          </header>
+          <p>A GitHub CLI extension that turns your team's pull-request history into a terminal dashboard: per-member stat lines, a nine-chart overview, twelve-week trends, and person drill-downs, all backed by an incremental SQLite cache so it works offline.</p>
+          <p class="meta">Built with Bubble Tea · Pure-Go SQLite, no CGO · Markdown export for standups</p>
+          <p class="links"><a href="https://github.com/byte2pixel/gh-statline">Repository</a></p>
+        </article>
+        <article class="card">
+          <header>
+            <h4><a href="https://github.com/byte2pixel/twitch-vite-template">Twitch Vite Template</a></h4>
+            <span class="tag">TypeScript · React</span>
+          </header>
+          <p>A starter template for Twitch panel extensions using Vite, React, and TypeScript. It wires up all four extension entry points, local HTTPS for the Twitch developer rig, and the module-preload setting Twitch requires, so a new extension builds and deploys on day one.</p>
+          <p class="meta">Grew out of shipping my own Twitch extensions, now installed by hundreds of streamers</p>
+          <p class="links"><a href="https://github.com/byte2pixel/twitch-vite-template">Repository</a></p>
+        </article>
+        <article class="card">
+          <header>
+            <h4><a href="https://github.com/byte2pixel/shopping-made-better">Shopping Made Better</a></h4>
+            <span class="tag">Kotlin · Android</span>
+          </header>
+          <p>My Full Sail University team capstone: a native Android grocery companion that builds shopping lists, compares prices across stores, tracks the pantry, and plans meals, backed by real grocery pricing data. My focus on the team is the Pantry and History features, from the data model and Supabase queries to the Compose screens.</p>
+          <p class="meta">Team project · Jetpack Compose and Material 3 · Dagger Hilt · Supabase backend</p>
+          <p class="links"><a href="https://github.com/byte2pixel/shopping-made-better">Repository</a></p>
+        </article>
+      </div>
+
+      <h3 class="subhead">Professional work</h3>
+      <div class="grid">
+        <article class="card work">
+          <header>
+            <h4>ValveLink Pro</h4>
+            <span class="tag">Emerson · 2022 – present</span>
+          </header>
+          <p>The replacement for Emerson's long-standing valve configuration software. It connects the person configuring a valve and actuator to the digital valve controller in the field over REST, WebSocket, and HART. I work across the .NET backend and the React front end and mentor developers on a 40+ person global team.</p>
+        </article>
+        <article class="card work">
+          <header>
+            <h4>TGX Remote Desktop</h4>
+            <span class="tag">Mechdyne · team lead</span>
+          </header>
+          <p>Remote-desktop software that streams demanding 3D applications from cloud workstations over long distances while keeping high resolution and frame rate. I led the development team and worked directly with the NVIDIA NVENC and NVDEC encoding APIs.</p>
+        </article>
+        <article class="card work">
+          <header>
+            <h4>GEC2O</h4>
+            <span class="tag">Mechdyne · federal</span>
+          </header>
+          <p>Mapping, mission-planning, and satellite message relay software for federal government customers, with both client and server components in C#, ASP.NET, and SQL Server. I also maintained its Java bridge to third-party targeting software and its Android client.</p>
+        </article>
+        <article class="card work">
+          <header>
+            <h4>Fulfillment Systems &amp; Client Migrations</h4>
+            <span class="tag">CDS Global · COBOL / DB2</span>
+          </header>
+          <p>High-volume transaction processing on the IBM AS/400 for product fulfillment, plus the data migrations that brought each new client's history into the platform. Every onboarding meant custom COBOL conversion programs and a cutover with no interruption to live processing.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="skills" class="section">
+      <h2>Skills</h2>
+      <div class="skills">
+        <div class="skill-group">
+          <h3>Languages</h3>
+          <ul class="chips"><li>C#</li><li>TypeScript</li><li>JavaScript</li><li>Go</li><li>Kotlin</li><li>C / C++</li><li>Java</li><li>COBOL</li><li>SQL</li></ul>
+        </div>
+        <div class="skill-group">
+          <h3>Frameworks &amp; UI</h3>
+          <ul class="chips"><li>.NET</li><li>ASP.NET Core</li><li>ASP.NET Web API</li><li>.NET Aspire</li><li>React</li><li>Redux</li><li>Jetpack Compose</li><li>Xamarin</li><li>Node.js</li></ul>
+        </div>
+        <div class="skill-group">
+          <h3>Cloud &amp; Delivery</h3>
+          <ul class="chips"><li>Microsoft Azure</li><li>Azure Cosmos DB</li><li>Fly.io</li><li>GitHub Actions</li><li>CI/CD</li><li>Microsoft SQL Server</li><li>DB2</li><li>SQLite</li></ul>
+        </div>
+        <div class="skill-group">
+          <h3>Protocols &amp; Media</h3>
+          <ul class="chips"><li>REST</li><li>WebSocket</li><li>HART</li><li>NVIDIA NVENC / NVDEC</li><li>Serilog</li><li>Cryptography (RSA, AES-GCM)</li></ul>
+        </div>
+        <div class="skill-group">
+          <h3>Practices</h3>
+          <ul class="chips"><li>Mentoring</li><li>Pair programming</li><li>Code review</li><li>Unit testing</li><li>Clean architecture</li><li>Team leadership</li></ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="education" class="section">
+      <h2>Education</h2>
+      <ol class="timeline">
+        <li>
+          <div class="when">Oct 2024 – Present</div>
+          <div class="what">
+            <h3>Full Sail University · <span>B.S. Computer Science</span></h3>
+            <p>In progress while working full time, currently holding a 4.0 GPA.</p>
+          </div>
+        </li>
+        <li>
+          <div class="when">2002 – 2005</div>
+          <div class="what">
+            <h3>Des Moines Area Community College · <span>A.S. Computer Programming</span></h3>
+            <p>Graduated with a 4.0 GPA. Coursework in Assembly, COBOL, C++, Visual Basic, and SQL with a focus on mainframe and financial systems.</p>
+          </div>
+        </li>
+      </ol>
+    </section>
+
+    <section id="contact" class="section">
+      <h2>Contact</h2>
+      <div class="prose">
+        <p>The fastest way to reach me is email. I am also active on GitHub and LinkedIn.</p>
+      </div>
+      <ul class="contact-list">
+        <li><span>Email</span><a href="mailto:byte2pixel@gmail.com">byte2pixel@gmail.com</a></li>
+        <li><span>GitHub</span><a href="https://github.com/byte2pixel">github.com/byte2pixel</a></li>
+        <li><span>LinkedIn</span><a href="https://www.linkedin.com/in/mel-dommer/">linkedin.com/in/mel-dommer</a></li>
+        <li><span>Location</span>Iowa, United States</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© 2026 Mel Dommer · Built with plain HTML and CSS, hosted on GitHub Pages.</p>
+  </footer>
+</body>
+</html>
